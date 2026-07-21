@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
-import Activities from './components/Activities';
-import Leaderboard from './components/Leaderboard';
-import Teams from './components/Teams';
-import Users from './components/Users';
-import Workouts from './components/Workouts';
+import Activities from './components/Activities.tsx';
+import Leaderboard from './components/Leaderboard.tsx';
+import Teams from './components/Teams.tsx';
+import Users from './components/Users.tsx';
+import Workouts from './components/Workouts.tsx';
 
 function App() {
   return (
