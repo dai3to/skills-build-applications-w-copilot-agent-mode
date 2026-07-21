@@ -9,7 +9,10 @@ import leaderboardRouter from './routes/leaderboard';
 import workoutsRouter from './routes/workouts';
 
 const app = express();
-const apiBaseUrl = getApiBaseUrl();
+const codespaceName = process.env.CODESPACE_NAME;
+const apiBaseUrl = codespaceName
+  ? `https://${codespaceName}-8000.app.github.dev`
+  : getApiBaseUrl();
 
 app.use(corsMiddleware);
 app.use(express.json());
